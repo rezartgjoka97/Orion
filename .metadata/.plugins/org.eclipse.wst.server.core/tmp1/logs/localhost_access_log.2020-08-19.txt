@@ -1,0 +1,13 @@
+127.0.0.1 - - [19/Aug/2020:11:37:54 +0200] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [19/Aug/2020:11:38:03 +0200] "GET /ServletAngularJS/EmployeeController HTTP/1.1" 404 790
+0:0:0:0:0:0:0:1 - - [19/Aug/2020:11:38:03 +0200] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [19/Aug/2020:11:39:04 +0200] "GET /ServletAngularJS/EmployeeController HTTP/1.1" 404 790
+0:0:0:0:0:0:0:1 - - [19/Aug/2020:11:40:27 +0200] "GET /ServletAngularJS HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [19/Aug/2020:11:40:27 +0200] "GET /ServletAngularJS/ HTTP/1.1" 404 772
+127.0.0.1 - - [19/Aug/2020:11:41:55 +0200] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [19/Aug/2020:11:42:04 +0200] "GET /ServletAngularJS/EmployeeController HTTP/1.1" 404 790
+0:0:0:0:0:0:0:1 - - [19/Aug/2020:11:42:19 +0200] "GET /ServletAngularJS/EmployeeController HTTP/1.1" 404 790
+0:0:0:0:0:0:0:1 - - [19/Aug/2020:11:42:21 +0200] "GET /ServletAngularJS/EmployeeController HTTP/1.1" 404 790
+0:0:0:0:0:0:0:1 - - [19/Aug/2020:11:42:33 +0200] "GET /ServletAngularJS/EmployeeController.java HTTP/1.1" 404 795
+0:0:0:0:0:0:0:1 - - [19/Aug/2020:11:42:38 +0200] "GET /ServletAngularJS/EmployeeController HTTP/1.1" 404 790
+0:0:0:0:0:0:0:1 - - [19/Aug/2020:11:43:08 +0200] "GET /ServletAngularJS/EmployeeListing HTTP/1.1" 200 1509

@@ -1,0 +1,94 @@
+package com.servletangular.controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Enumeration;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.google.gson.Gson;
+import com.servletangular.beans.customer;
+import com.servletangular.service.CustomerService;
+import com.servletangular.service.CustomerServiceImpl;
+
+
+
+@WebServlet("/CustomerController")
+public class CustomerController extends HttpServlet {
+	
+	public static final long serialVersionUID=1L;
+	
+	
+	private CustomerService customerService;
+	
+	
+	
+	@Override
+	public void init() throws ServletException{
+		super.init();
+		customerService=new CustomerServiceImpl();
+	}
+	
+	
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
+		 resp.setHeader("Access-Control-Allow-Origin", "*");
+		List<customer> List=customerService.findCustomers();
+		PrintWriter out=resp.getWriter();
+		
+		resp.setContentType("application/json");
+		Gson gson=new Gson();
+		
+
+			
+			String jsonData=gson.toJson(List);
+
+			out.print(jsonData);
+			
+			System.out.println("doget");
+		    
+		
+		
+		out.close();
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
+		resp.setHeader("Content-type", "application/json");  
+	
+		  resp.setHeader("Access-Control-Allow-Credentials", "true");
+		  resp.setHeader("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
+		 
+		 resp.setHeader("Access-Control-Allow-Headers", "X-Requested-With, Authorization, " +
+	                "Accept-Version, Content-type, Content-MD5, CSRF-Token");
+		 
+
+	      
+			
+			
+		      
+			
+			System.out.println("dopost");
+
+		 
+	}
+	
+	
+
+}

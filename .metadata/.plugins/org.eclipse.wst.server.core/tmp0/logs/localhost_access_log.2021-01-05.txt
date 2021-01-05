@@ -1,0 +1,4 @@
+127.0.0.1 - - [05/Jan/2021:12:01:35 +0100] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [05/Jan/2021:12:01:50 +0100] "GET /orionBE/CustomerController HTTP/1.1" 200 2464
+0:0:0:0:0:0:0:1 - - [05/Jan/2021:12:01:50 +0100] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [05/Jan/2021:12:02:38 +0100] "GET /orionBE/CustomerController HTTP/1.1" 200 1

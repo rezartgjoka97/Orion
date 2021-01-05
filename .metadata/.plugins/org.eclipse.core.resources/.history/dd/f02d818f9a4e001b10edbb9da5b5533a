@@ -1,0 +1,5 @@
+package com.servletangular.controller;
+
+public class GetUser {
+
+}

@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [22/Jul/2020:09:42:36 +0200] "GET /ServletAngularJS/EmployeeListing HTTP/1.1" 200 1509
+0:0:0:0:0:0:0:1 - - [22/Jul/2020:10:21:51 +0200] "GET /ServletAngularJS/EmployeeListing HTTP/1.1" 200 1509
+0:0:0:0:0:0:0:1 - - [22/Jul/2020:12:40:16 +0200] "GET /ServletAngularJS/EmployeeListing HTTP/1.1" 200 1509
+0:0:0:0:0:0:0:1 - - [22/Jul/2020:13:08:04 +0200] "POST /ServletAngularJS/EmployeeSaving HTTP/1.1" 405 752

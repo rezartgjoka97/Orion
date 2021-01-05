@@ -1,0 +1,34 @@
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {customers } from './customers.model';
+
+
+@Injectable({
+	providedIn: 'root'
+})
+
+
+export class DataService{
+	apiUrl="http://localhost:8080/orionBE/";
+	
+	
+	constructor(private http: HttpClient){
+	
+}
+
+
+getCustomers(){
+	var customersApiUrl=this.apiUrl+"CustomerController";
+	
+	return this.http.get<customers[]>(customersApiUrl);
+}
+
+updateCustomers(customers: customers){
+	
+		var customersApiUrl=this.apiUrl+"CustomerController";
+var url="https://httpbin.org/post";
+	return this.http.post(url, customers).toPromise().then((data:any)=>
+	console.log(data));
+}
+
+}

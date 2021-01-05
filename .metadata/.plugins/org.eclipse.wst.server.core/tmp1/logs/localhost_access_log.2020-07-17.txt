@@ -1,0 +1,2 @@
+127.0.0.1 - - [17/Jul/2020:19:38:33 +0200] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [17/Jul/2020:19:38:43 +0200] "GET /ServletAngularJS/EmployeeController HTTP/1.1" 200 521

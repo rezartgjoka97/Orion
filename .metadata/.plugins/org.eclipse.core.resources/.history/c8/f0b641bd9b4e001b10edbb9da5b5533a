@@ -1,0 +1,38 @@
+package com.servletangular.dao.util;
+
+
+import com.servletangular.beans.customer;
+
+public class SQLQuery {
+
+	public static final String SQL_SELECT_ALL_CUSTOMERS="select *  from customers" ;
+	
+	
+	public static  String SQL_ADD_CUSTOMER(customer customer) {
+		
+		String query="call InsertCustomer('"+customer.username+"','"+customer.first_name+"','"+customer.middle_name+"','"
+		+customer.last_name+"','"+customer.email+"','"+customer.password+"',"
+	    + "'"+customer.phone+"','"+customer.address+"','"+customer.city+
+		"','"+customer.country+"','"+customer.zip_code+"')";
+		
+
+		return query;
+		
+	}
+	
+	public static String USER_AUTH(customer customer) {
+		String query ="Select CheckPassword('"+customer.username+"','"+customer.password+"')";
+		return query;	
+	}
+	
+	public static String GetUserByUsername(String username) {
+		String query="call getuserbyusername('"+username+"')";
+		return query;
+	}
+
+
+	
+
+	
+	
+}

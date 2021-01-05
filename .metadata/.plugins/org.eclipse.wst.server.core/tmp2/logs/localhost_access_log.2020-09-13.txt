@@ -1,0 +1,8 @@
+127.0.0.1 - - [13/Sep/2020:14:51:21 +0200] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [13/Sep/2020:14:51:52 +0200] "GET /JEETut1/index.jsp HTTP/1.1" 200 869
+0:0:0:0:0:0:0:1 - - [13/Sep/2020:14:52:10 +0200] "POST /JEETut1/ProcessInfo HTTP/1.1" 200 946
+0:0:0:0:0:0:0:1 - - [13/Sep/2020:14:52:25 +0200] "POST /JEETut1/ProcessInfo HTTP/1.1" 200 568
+0:0:0:0:0:0:0:1 - - [13/Sep/2020:14:53:39 +0200] "GET /JEETut1/DisplayInfo.jsp HTTP/1.1" 200 495
+0:0:0:0:0:0:0:1 - - [13/Sep/2020:14:53:58 +0200] "POST /JEETut1/ProcessInfo HTTP/1.1" 200 951
+0:0:0:0:0:0:0:1 - - [13/Sep/2020:14:54:00 +0200] "POST /JEETut1/ProcessInfo HTTP/1.1" 200 951
+0:0:0:0:0:0:0:1 - - [13/Sep/2020:14:54:10 +0200] "POST /JEETut1/ProcessInfo HTTP/1.1" 200 568

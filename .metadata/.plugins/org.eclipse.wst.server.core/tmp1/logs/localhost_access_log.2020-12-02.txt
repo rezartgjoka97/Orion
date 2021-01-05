@@ -1,0 +1,6 @@
+127.0.0.1 - - [02/Dec/2020:21:55:32 +0100] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [02/Dec/2020:21:55:41 +0100] "GET /ServletAngularJS/EmployeeListing HTTP/1.1" 200 1509
+0:0:0:0:0:0:0:1 - - [02/Dec/2020:21:56:20 +0100] "GET /ServletAngularJS/EmployeeSaving HTTP/1.1" 200 19
+0:0:0:0:0:0:0:1 - - [02/Dec/2020:21:56:34 +0100] "GET /ServletAngularJS/EmployeeListing HTTP/1.1" 200 1602
+0:0:0:0:0:0:0:1 - - [02/Dec/2020:21:56:46 +0100] "GET /ServletAngularJS/EmployeeSaving HTTP/1.1" 200 19
+0:0:0:0:0:0:0:1 - - [02/Dec/2020:21:56:51 +0100] "GET /ServletAngularJS/EmployeeListing HTTP/1.1" 200 1695

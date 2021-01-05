@@ -1,0 +1,86 @@
+<mdb-card class="mdbstyle">
+
+  <mdb-card-header  class="info-color white-text text-center">
+    <h5 style="font-size: x-large; padding-top: inherit;">
+      Register
+    </h5>
+  </mdb-card-header>
+
+
+  <mdb-card-body class="px-lg-5 pt-0">
+
+    <form class="text-center" style="color: #757575;">
+    
+    
+     <div class="md-form">
+        <input type="text" [(ngModel)]="userName" name="userName" id="Username" class="form-control" mdbInput required>
+        <label for="Username">Username</label>
+      </div>
+      
+       <div class="md-form">
+        <input type="text" [(ngModel)]="firstName" name="firstName" id="FirstName" class="form-control" mdbInput required>
+        <label for="FirstName">First Name</label>
+      </div>
+      
+       <div class="md-form">
+        <input type="text" [(ngModel)]="middleName" name="middleName" id="MiddleName" name="userName" class="form-control" mdbInput>
+        <label for="MiddleName">Middle Name</label>
+      </div>
+      
+       <div class="md-form">
+        <input type="text" [(ngModel)]="lastName" name="lastName" id="LastName" name="userName" class="form-control" mdbInput required>
+        <label for="LastName">Last Name</label>
+      </div>
+
+      <div class="md-form">
+        <input type="email" [(ngModel)]="eMail" name="eMail"  id="Email" class="form-control" mdbInput required>
+        <label for="Email">E-mail</label>
+      </div>
+
+      <div class="md-form">
+        <input [(ngModel)]="password" name="password" type="password" id="Password" class="form-control" mdbInput required>
+        <label for="Password">Password</label>
+         <small id="PasswordHelpBlock" class="form-text text-muted mb-4">
+                    At least 8 characters and 1 digit
+                </small>
+      </div>
+      
+      <div class="md-form">
+        <input type="text" [(ngModel)]="phone" name="phone" id="Phone" class="form-control" mdbInput required>
+        <label for="Phone">Phone</label>
+      </div>
+      
+      <div class="md-form">
+        <input type="text" [(ngModel)]="address" name="address" id="Address" class="form-control" mdbInput required>
+        <label for="Address">Address</label>
+      </div>
+      
+      <div class="md-form">
+        <input type="text" [(ngModel)]="city" name="city" id="City" class="form-control" mdbInput required>
+        <label for="City">City</label>
+      </div>
+      
+      <!-- <div class="md-form">
+        <input type="text" [(ngModel)]="state" name="state" id="State" class="form-control" mdbInput>
+        <label for="State">State</label>
+      </div> -->
+      
+      <div class="md-form">
+        <input type="text" [(ngModel)]="country" name="country" id="Country" class="form-control" mdbInput required>
+        <label for="Country">Country</label>
+      </div>
+      
+      <div class="md-form">
+        <input type="text" [(ngModel)]="zipCode" name="zipCode" id="ZipCode" class="form-control" mdbInput required>
+        <label for="ZipCode">Zip Code</label>
+      </div>
+      
+      <button mdbBtn color="info"  rounded="true" block="true" class="my-4 waves-effect z-depth-0" mdbWavesEffect
+        type="button" (click)="updateCustomers()" >Register</button>
+
+      
+    </form>
+
+  </mdb-card-body>
+
+</mdb-card>

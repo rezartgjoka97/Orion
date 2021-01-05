@@ -1,0 +1,7 @@
+127.0.0.1 - - [20/Jul/2020:23:57:14 +0200] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [20/Jul/2020:23:58:16 +0200] "GET /JavaAPI/rest/hello HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [20/Jul/2020:23:58:40 +0200] "GET /JavaAPI/ HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [20/Jul/2020:23:58:52 +0200] "GET /JavaAPI/hello HTTP/1.1" 404 768
+0:0:0:0:0:0:0:1 - - [20/Jul/2020:23:59:45 +0200] "GET /JavaAPI/hello/rest/hello HTTP/1.1" 404 787
+0:0:0:0:0:0:0:1 - - [20/Jul/2020:23:59:52 +0200] "GET /JavaAPI/hello/rest/hello.java HTTP/1.1" 404 792
+0:0:0:0:0:0:0:1 - - [20/Jul/2020:23:59:56 +0200] "GET /JavaAPI/hello/rest/hello.html HTTP/1.1" 404 792

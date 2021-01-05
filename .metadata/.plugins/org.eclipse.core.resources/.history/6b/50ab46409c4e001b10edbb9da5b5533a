@@ -1,0 +1,110 @@
+package com.servletangular.dao.d;
+
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.servletangular.beans.customer;
+
+import com.servletangular.dao.util.ConnectionUtil;
+import com.servletangular.dao.util.SQLQuery;
+
+public class CustomerDAOimpl implements CustomerDAO {
+
+
+	@Override
+	public List<customer> findCustomers() throws SQLException{
+		
+		List<customer> customerList=new ArrayList<>();
+
+		Connection con=ConnectionUtil.getNewConnection();
+
+		PreparedStatement ps= con.prepareStatement(SQLQuery.SQL_SELECT_ALL_CUSTOMERS);
+		
+		ResultSet rs=ps.executeQuery();
+		
+		while(rs.next()) {
+			
+			int id=rs.getInt(1);
+			String username=rs.getString(2);
+			String first_name=rs.getString(3);
+			String middle_name=rs.getString(4);
+			String last_name=rs.getString(5);
+			String email=rs.getString(6);
+			String password=rs.getString(7);
+			String phone=rs.getString(8);
+			String address=rs.getString(9);
+			String city=rs.getString(10);
+			String country=rs.getString(11);
+			String zip_code=rs.getString(12);
+			boolean admin=rs.getBoolean(13);
+			
+			customer customer=new customer(id, username, first_name, middle_name, last_name,
+					email ,password , phone , address, city, country,zip_code, admin);
+			customerList.add(customer);
+			
+		}
+		return customerList;
+		
+		
+		
+	}
+	
+	
+	
+	
+	@Override
+	public void addCustomer(customer customer) throws SQLException {
+		Connection con=ConnectionUtil.getNewConnection();
+		PreparedStatement ps= con.prepareStatement(SQLQuery.SQL_ADD_CUSTOMER(customer));
+		
+		ps.execute();
+
+	}
+	
+	@Override
+	public int userAuth(customer customer) throws SQLException {
+		Connection con=ConnectionUtil.getNewConnection();
+		PreparedStatement ps= con.prepareStatement(SQLQuery.USER_AUTH(customer));
+		
+		ResultSet rs=ps.executeQuery();
+		rs.next();
+			return rs.getInt(1);
+		
+	}
+	
+	@Override 
+	public customer getUserByUsername(String username) {
+		Connection con=ConnectionUtil.getNewConnection();
+		PreparedStatement ps= con.prepareStatement(SQLQuery.GET_USER(username));
+		ResultSet rs=ps.executeQuery();
+        customer cus=new customer();
+		while(rs.next()) {
+			int id=rs.getInt(1);
+			String userName=rs.getString(2);
+			String first_name=rs.getString(3);
+			String middle_name=rs.getString(4);
+			String last_name=rs.getString(5);
+			String email=rs.getString(6);
+			String password=rs.getString(7);
+			String phone=rs.getString(8);
+			String address=rs.getString(9);
+			String city=rs.getString(10);
+			String country=rs.getString(11);
+			String zip_code=rs.getString(12);
+			boolean admin=rs.getBoolean(13);
+			
+			customer customer=new customer(id, userName, first_name, middle_name, last_name,
+					email ,password , phone , address, city, country,zip_code, admin);
+			cus=customer;
+		}
+   return cus;
+	}
+	
+	
+	
+}
