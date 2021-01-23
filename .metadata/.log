@@ -10082,3 +10082,21 @@ java.lang.NullPointerException: Cannot invoke "com.google.javascript.jscomp.pars
 	at org.eclipse.wst.jsdt.internal.core.search.indexing.IndexManager$1.execute(IndexManager.java:728)
 	at org.eclipse.wst.jsdt.internal.core.search.processing.JobManager.run(JobManager.java:393)
 	at java.base/java.lang.Thread.run(Thread.java:832)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2021-01-05 12:39:45.717
+!MESSAGE Cannot invoke "com.google.javascript.jscomp.parsing.parser.Token.asLiteral()" because the return value of "com.google.javascript.jscomp.parsing.parser.Parser.eat(com.google.javascript.jscomp.parsing.parser.TokenType)" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "com.google.javascript.jscomp.parsing.parser.Token.asLiteral()" because the return value of "com.google.javascript.jscomp.parsing.parser.Parser.eat(com.google.javascript.jscomp.parsing.parser.TokenType)" is null
+	at com.google.javascript.jscomp.parsing.parser.Parser.parseExportDeclaration(Parser.java:534)
+	at com.google.javascript.jscomp.parsing.parser.Parser.parseScriptElement(Parser.java:310)
+	at com.google.javascript.jscomp.parsing.parser.Parser.parseGlobalSourceElements(Parser.java:271)
+	at com.google.javascript.jscomp.parsing.parser.Parser.parseProgram(Parser.java:256)
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:116)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:911)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:675)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.SourceIndexer.indexDocument(SourceIndexer.java:93)
+	at org.eclipse.wst.jsdt.internal.core.search.JavaSearchParticipant.indexDocument(JavaSearchParticipant.java:79)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.IndexManager.indexDocument(IndexManager.java:325)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.IndexManager$1.execute(IndexManager.java:728)
+	at org.eclipse.wst.jsdt.internal.core.search.processing.JobManager.run(JobManager.java:393)
+	at java.base/java.lang.Thread.run(Thread.java:832)
